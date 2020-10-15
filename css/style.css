@@ -1,0 +1,574 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.section.section_banner{
+    background-image: linear-gradient(to bottom, rgba(43,46,74,.95) 0%,rgba(43,46,74, .95) 100%),url(http://test-panda.online/Activebox/pic/banner.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.nav_box{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    padding-bottom: 155px;
+}
+
+.navigation span{
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-left: 50px;
+    font: 300 13px 'Ralewat',sans-serif;
+}
+
+.navigation a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navigation a:hover{
+    opacity: .7;
+}
+
+.main_banner h1{
+    font: 700 65px 'Open Sans', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.main_banner h2{
+    color: #ffffff;
+    font: 300 22px 'Raleway', sans-serif;
+    text-align: center;
+    padding: 40px 125px 80px;
+}
+
+.main_banner button{
+    background-color: #e84545;
+    text-transform: uppercase;
+    font: 500 13px 'Raleway', sans-serif;
+    border: none;
+    width: 200px;
+    height: 45px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.main_banner a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.main_banner button:hover{
+    opacity: .7;
+}
+
+.main_banner button{
+    display: block;
+    margin: 0 auto;
+}
+
+.main_banner{
+    padding-bottom: 157px;
+}
+
+.features_box{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 120px 0;
+}
+
+.feature{
+    max-width: 33.3%;
+    padding: 0 40px;
+    margin-bottom: 75px;
+}
+
+.feature img{
+    display: block;
+    margin: 0 auto;
+}
+
+.feature h3{
+ font: 700 14px 'Raleway', sans-serif;
+ columns: #000000;
+ text-transform: uppercase;   
+ text-align: center;
+ margin: 25px 0;
+}
+
+.feature p{
+    color: #6c7279;
+    font: 14px 'Raleway', sans-serif;
+    text-align: center;
+}
+
+.section.section_works{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work img{
+    width: 100%;
+    height: 100%;
+}
+.work{
+    width: 25%;
+}
+
+.work {
+    position: relative;
+}
+
+.work a{
+    cursor: pointer;
+}
+
+.work h4{
+    font: 700 14px 'Raleway', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+}
+
+.work p{
+    font: 14px 'Raleway', sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:#e84545;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .work:hover .overlay{
+    opacity: .9;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  }
+
+  .team_box{
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin: 100px 0;
+  }
+
+  .team{
+      width: 25%;
+      padding: 0 15px;
+  }
+
+  .team img{
+      width: 100%;
+  }
+
+  .team h4{
+      font: 400 22px 'Raleway', sans-serif;
+      color: #000000;
+      margin: 30px 0 0;
+  }
+
+  .team h5{
+      font: 500 13px 'Raleway', sans-serif;
+      color:#e84545;
+      text-transform: uppercase;
+      margin:15px 0 0;
+  }
+
+  .team p{
+      font: 14px 'Raleway', sans-serif;
+      color: #6c7279;
+      margin: 30px 0;
+  }
+
+  .team i{
+      border: 1px #c6cacc solid;
+      padding: 10px 10px;
+      color: #c6cacc;
+  }
+
+  .team a{
+      cursor: pointer;
+  }
+
+  .team i:hover{
+      color: #ffffff;
+      border: 1px #ec5353 solid;
+      box-shadow: inset 0 2em 3em -1em #ec5353;
+  }
+
+  .icon_team{
+      justify-content: end;
+  }
+
+  .section_clients{
+      max-width: 100%;
+      display: flex;
+  }
+
+.section_clients img{
+    max-width: 50%;
+    display: inline-block;
+}
+
+  .section_clients{
+      background-color: #53354a;
+  }
+
+  blockquote{
+    font: 18px 'Cardo', serif;
+    color: #ffffff;
+    padding-left: 86px;
+    margin-bottom: 20px;
+  }
+
+  blockquote::before{
+      content: open-quote;
+  }
+
+  blockquote::after{
+      content: close-quote;
+  }
+
+  .clients_box p{
+      color: #ffffff;
+      font: 600 13px 'Raleway',sans-serif;
+      text-transform: uppercase;
+      padding-left: 86px;
+  }
+
+  .clients_box{
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+  }
+
+.container_clients{
+    width: 100%;
+    padding: 0 30px;
+
+}
+
+  .slider {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .slider__nav {
+    width: 6px;
+    height: 6px;
+    margin: 2rem 12px;
+    border-radius: 50%;
+    z-index: 10;
+    outline: 6px solid #755d6e;
+    outline-offset: -6px;
+    box-shadow: 0 0 0 0 #755d6e, 0 0 0 0 rgba(51, 51, 51, 0);
+    cursor: pointer;
+    appearance: none;
+    backface-visibility: hidden;
+  }
+  .slider__nav:checked {
+    animation: check 0.4s linear forwards;
+  }
+  .slider__nav:checked:nth-of-type(1) ~ .slider__inner {
+    left: 0%;
+  }
+  .slider__nav:checked:nth-of-type(2) ~ .slider__inner {
+    left: -100%;
+  }
+  .slider__nav:checked:nth-of-type(3) ~ .slider__inner {
+    left: -200%;
+  }
+  .slider__nav:checked:nth-of-type(4) ~ .slider__inner {
+    left: -300%;
+  }
+  .slider__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    transition: left 0.4s;
+    display: flex;
+   flex-flow: row nowrap;
+  }
+
+  .slider__contents {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+
+  
+  @-webkit-keyframes check {
+    50% {
+      outline-color: #ffffff;
+      box-shadow: 0 0 0 12px #ffffff, 0 0 0 36px rgba(255, 255, 255, 0.2);
+    }
+    100% {
+      outline-color: #ffffff;
+      box-shadow: 0 0 0 0 #ffffff, 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+  }
+  
+  @keyframes check {
+    50% {
+      outline-color: #ffffff;
+      box-shadow: 0 0 0 12px #ffffff, 0 0 0 36px rgba(51, 51, 51, 0.2);
+    }
+    100% {
+      outline-color: #ffffff;
+      box-shadow: 0 0 0 0 #ffffff, 0 0 0 0 rgba(51, 51, 51, 0);
+    }
+  }
+  
+  .section_download h5{
+      font: 300 28px 'Raleway',sans-serif;
+      text-align: center;
+      text-transform: capitalize;
+      }
+
+   .section_download p{
+      font: 600 13px 'Raleway',sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 20px 0 40px;
+      }
+
+    .section_download button{
+     background-color: #e84545;
+     text-transform: uppercase;
+     font: 500 13px 'Raleway', sans-serif;
+     border: none;
+     width: 200px;
+     height: 45px;
+     cursor: pointer;
+     text-align: center;
+     border-radius: 2px;
+    }
+
+    .section_download a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    
+    .section_download button:hover{
+        opacity: .7;
+    }
+    
+    .section_download button{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .download_box{
+        margin: 100px 0;
+    }
+
+    .section_footer{
+        background-color: #3a3e64;
+    }
+
+    .footer_box{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        padding: 70px 0 86px;
+    }
+
+    .location{
+        width: 33.3%;
+    }
+
+    .share{
+        width: 33.3%;
+    }
+
+    .about{
+        width: 33.3%;
+    }
+
+    .footer_box h5{
+        text-transform: uppercase;
+        color: #ffffff;
+        font: 600 14px 'Raleway',sans-serif;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer_box p{
+        font: 600 14px 'Raleway',sans-serif;
+        text-align: center;
+        color: #757893;
+    }
+
+    .share i{
+        color: #ffffff;
+        padding: 10px;
+        border: 1px #ffffff solid;
+    }
+
+    .share i:hover{
+        opacity: .6;
+    }
+
+    .share_nav{
+        text-align: center;
+    }
+
+    .bottom{
+        background-color: #313454;
+    }
+
+    .bottom p{
+        color: #757893;
+        text-align: center;
+        font: 600 14px 'Raleway',sans-serif;
+    }
+
+    .bottom i{
+        color: #e84545;
+    }
+
+    .bottom_box{
+        padding: 30px 0;
+    }
+
+   @media (min-width: 320px) and (max-width: 768px){
+        .main_banner h1{
+            font-size: 20px;
+        }
+        .main_banner h2{
+            font-size: 13px;
+            padding: 30px 10px;
+        }
+        .nav_box{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 0;
+        }
+        .navigation{
+            display: flex;
+            flex-direction: column;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .navigation span{
+            margin-left: 0;
+        }
+        .logo{
+            text-align: center;
+        }
+        .main_banner button{
+            margin: 30px auto;
+        }
+        .main_banner{
+            padding-bottom: 30px;
+        }
+        .features_box{
+            flex-direction: column;
+            margin: 50px 0 0 0;
+        }
+        .feature{
+            max-width: 100%;
+            margin-bottom: 50px;
+            padding: 0 20px;
+        }
+        .work{
+            width: 50%;
+        }
+        .team_box{
+            margin:40px auto;
+            flex-direction: column;
+        }
+        .team{
+            width: 100%;
+            margin-bottom: 60px;
+        }
+
+        .team img{
+            width: 60%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .team h4,h5,p{
+            text-align: center;
+        }
+
+        .icon_team{
+            text-align: center;
+        }
+
+        .download_box{
+            margin-top: 60px;
+        }
+
+        .section_clients{
+            display: none;
+        }
+        .section_download h5{
+            font-size: 20px;
+        }
+        .section_download p{
+            font-size: 10px;
+        }
+        .section_download button{
+            width: 150px;
+            font-size: 10px;
+        }
+        .footer_box{
+            flex-direction: column;
+            padding: 30px 0 30px;
+        }
+        .location{
+            width: 100%;
+            margin-bottom: 35px;
+        }
+        .share{
+            width: 100%;
+            margin-bottom: 35px;
+        }
+        .about{
+            width: 100%;
+        }
+    }
